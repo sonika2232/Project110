@@ -1,0 +1,58 @@
+ 
+<html>
+  <head>
+    <title>Image recognition</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+    <script src="https://unpkg.com/ml5@0.4.3/dist/ml5.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/webcamjs/1.0.26/webcam.js"></script>
+
+   <link rel="stylesheet" href="style.css">
+  
+  </head>
+
+  <body>
+  <div class="container">
+    
+    <center>
+      <h3 class="btn-btn-primary heading">Detective<span><img style=" width: 50px; height: 50px;" src="logo.png"></span></h3>
+      <br><br>
+
+      <p style="font-size: 22px;">Model is trained to identify the following objects: </p>
+      <b class="he1">
+        Computer <span><img class="image" src="comp.png"></span>
+        <hr>
+        Mouse  <span><img class="image" src="mouse.png"></span>
+        <hr>
+        Desktop <span><img class="image" src="desk.png"></span>
+        <hr> 
+        Cup <span><img class="image" src="cup.png"></span>
+        <hr>
+      </b>
+
+      <label>Webcam View - </label>
+      <div id="camera"></div>
+      
+      <br><br>
+      <label>Snapshot View - </label>
+      <div id="result"></div>
+      <br><br>
+      <button type="button" onclick="snapshot();" class="btn btn-success">Capture Image<span><img id="img" style="width: 30px; height: 20px;" src="https://cdn3.iconfinder.com/data/icons/linecons-free-vector-icons-pack/32/camera-512.png"></span></button>
+      <br><br>
+      
+      <button type="button" onclick="testify();" class="btn btn-primary">Test Image<span><img id="img" style="width: 30px; height: 20px;" src="https://img.icons8.com/ios/452/test-passed.png"></span></button>
+      
+      <br><br>
+      <p style="font-size: 22px;">Object :<span id="object"></span>  </p>
+      <p style="font-size: 22px;">Accuracy : <span id="accuracy"></span> </p>
+    </center>
+
+  </div>
+<script src="main.js"></script>
+
+  </body>
+</html>
+
+ 
